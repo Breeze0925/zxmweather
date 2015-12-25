@@ -28,7 +28,7 @@ public class ZxmWeatherDB {
 	private SQLiteDatabase db;
 	
 	/*
-	 * 将构造方法私有化,使其只能存在一个该实例
+	 * 将构造方法私有化,这样可以保证全局范围内只会有一个ZxmWeatherDB实例
 	 */
 	private ZxmWeatherDB(Context context) {
 		ZxmWeatherOpenHelper dbHelper = new ZxmWeatherOpenHelper(context,DB_NAME,null,VERSION);
