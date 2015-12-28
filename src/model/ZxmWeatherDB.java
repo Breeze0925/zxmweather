@@ -72,6 +72,9 @@ public class ZxmWeatherDB {
 				list.add(province);
 			} while(cursor.moveToNext());
 		}
+		if(cursor!=null) {
+			cursor.close();
+		}
 		return list;
 	}
 	
@@ -103,6 +106,9 @@ public class ZxmWeatherDB {
 				list.add(city);
 			} while(cursor.moveToNext());
 		}
+		if(cursor!=null) {
+			cursor.close();
+		}
 		return list;
 	}
 	/*
@@ -133,6 +139,9 @@ public class ZxmWeatherDB {
 				country.setCityId(cityId);
 				list.add(country);
 			} while(cursor.moveToNext()); 
+		}
+		if(cursor!=null) {
+			cursor.close();
 		}
 		return list;
 	}
