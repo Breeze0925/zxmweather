@@ -1,7 +1,8 @@
 package util;
 
+//import java.sql.Date;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+//import java.util.Date;
 import java.util.Locale;
 
 import org.json.JSONException;
@@ -116,7 +117,7 @@ public class Utility {
 		editor.putString("temp2", temp2);
 		editor.putString("weather_desp", weatherDesp);
 		editor.putString("publish_time", publishTime);
-		editor.putString("current_date", sdf.format(new Date()));
+		editor.putString("current_date", sdf.format(new java.util.Date()));
 		editor.commit();
 		
 	}
